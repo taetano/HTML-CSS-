@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem 2rem;
+
+            width: 30%;
+            padding: 1rem 1.5rem;
+            margin: 2rem auto;
+
+            border: 1px solid lightgreen;
+            border-radius: 0.7rem;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 1rem;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 1rem 2rem;
+            flex-basis: 50%;
+        }
+
+        .text-only {
+            color: black;
+            border: 1px solid #000;
+        }
+
+        .button {
+            background: lightcoral;
+            color: #fff;
+        }
+    </style>
+    <body>
+        <section>
+            <h2>Modal Title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                inventore.
+            </p>
+            <div>
+                <input class="text-only" type="button" value="Cancel" />
+                <input class="button" type="button" value="View Detail" />
+            </div>
+        </section>
+    </body>
+</html>
