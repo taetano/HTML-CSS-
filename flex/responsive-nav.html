@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background: #827397;
+            padding: 1rem;
+            border-radius: 0.5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        nav {
+            flex-basis: 30%;
+
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            text-align: center;
+            background: #fff;
+            color: #000;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+
+            flex: 1 1 0;
+        }
+
+        input {
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: none;
+            background: #e9d5da;
+            outline: none;
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            header {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                order: 1;
+
+                flex-basis: 100%;
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <h3>EL</h3>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+            </nav>
+            <form>
+                <input type="search" placeholder="Search here..." />
+            </form>
+        </header>
+    </body>
+</html>
