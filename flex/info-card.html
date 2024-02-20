@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            :root {
+                font-size: 62.5%;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .personal-cards {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: #f4d7d7;
+                padding: 2rem 4rem;
+            }
+
+            .personal-cards__card {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .personal-cards__card--img {
+                width: 20rem;
+                height: 20rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .personal-cards__card--info__name {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .personal-cards__card--info__role {
+                font-size: 1.5rem;
+                opacity: 0.3;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="personal-cards">
+            <section class="personal-cards__card">
+                <img
+                    class="personal-cards__card--img"
+                    loading="lazy"
+                    src="images/8.1.jpg"
+                    alt="woman"
+                />
+
+                <div class="personal-cards__card--info">
+                    <p class="personal-cards__card--info__name">Alice Ivy</p>
+                    <p class="personal-cards__card--info__role">CEO</p>
+                </div>
+            </section>
+            <section class="personal-cards__card">
+                <img
+                    class="personal-cards__card--img"
+                    loading="lazy"
+                    src="images/8.2.jpg"
+                    alt="woman"
+                />
+
+                <div class="personal-cards__card--info">
+                    <p class="personal-cards__card--info__name">Alex Ivy</p>
+                    <p class="personal-cards__card--info__role">CFO</p>
+                </div>
+            </section>
+            <section class="personal-cards__card">
+                <img
+                    class="personal-cards__card--img"
+                    loading="lazy"
+                    src="images/8.3.jpg"
+                    alt="woman"
+                />
+
+                <div class="personal-cards__card--info">
+                    <p class="personal-cards__card--info__name">Joy Ivy</p>
+                    <p class="personal-cards__card--info__role">CMO</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
